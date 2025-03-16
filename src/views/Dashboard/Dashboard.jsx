@@ -1,5 +1,5 @@
 import React from 'react'
-import {AboutMe,Samples,Skills,Testimonials} from "./components"
+import {AboutMe,Samples,Skills,Testimonials,Contact} from "./components"
 import "./Dashboard.css"
 
 const Dashboard = () => {
@@ -8,6 +8,7 @@ const Dashboard = () => {
       <AboutMe/>
       <Skills/>
       <Samples/>
+      <Contact/>
     </div>
   )
 }
