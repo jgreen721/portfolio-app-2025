@@ -1,0 +1,20 @@
+.about-me-header {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.about-me-header::after {
+  content: "";
+  width: 50px;
+  height: 6px;
+  background: var(--secondarycolor);
+  position: absolute;
+  bottom: 0;
+  border-radius: 1rem;
+  box-shadow: -5px 5px 5px rgba(15, 15, 20, 0.55) inset;
+}
+
+.about-me-blurb {
+  line-height: 2.5rem;
+}

@@ -1,0 +1,108 @@
+.avatar-devname-div {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  border-bottom: 2px solid var(--maincolor);
+  /* border: 2px solid red; */
+}
+
+.avatar-img-div {
+  height: 100px;
+  width: 100px;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(100px);
+  /* opacity: 0; */
+}
+
+.dark-avatar-bg {
+  filter: blur(100px);
+}
+
+/* .dark-avatar-img {
+  transform: translateY(15rem);
+} */
+
+.avatar-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(15rem);
+}
+
+.h5-role {
+  background: var(--lightbg);
+  width: fit-content;
+  padding: 1rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.h5-role-div {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.h5-role-div::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  background: var(--secondarycolor);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  filter: blur(10px);
+  opacity: 50%;
+  transform: skew(15deg);
+  border-radius: 1rem;
+  /* border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; */
+}
+
+.role-theme-div {
+  display: flex;
+  align-items: center;
+  gap: 1;
+}
+
+@media screen and (max-width: 1050px) {
+  .avatar-devname-div {
+    border-bottom: none;
+    padding-bottom: 0rem;
+    width: auto;
+    /* border: 2px solid red; */
+  }
+
+  .themepicker-div {
+    position: absolute;
+    top: 2.5rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .role-theme-div {
+    flex-direction: column;
+    /* position: relative; */
+  }
+
+  .h5-role-div {
+    margin: 1rem 0;
+  }
+}

@@ -1,0 +1,39 @@
+.media-links-section {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  /* border: 2px solid red; */
+}
+
+.hidden-avatar-div {
+  padding: 2rem;
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.media-link-item {
+  cursor: pointer;
+}
+
+.media-link {
+  color: var(--darkbg);
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 650px) {
+  .media-links {
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .media-link {
+    font-size: 2rem;
+  }
+}

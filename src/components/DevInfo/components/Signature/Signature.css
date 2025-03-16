@@ -1,0 +1,24 @@
+.sig-div {
+  /* border: 1px solid red; */
+  width: fit-content;
+  padding: 0 0.5rem;
+}
+
+.sig-svg path {
+  /* fill: none; */
+  /* fill: none; */
+  stroke-dashoffset: 500;
+  stroke-dasharray: 500;
+  animation: animatepath 3s 1s forwards;
+  /* fill: black; */
+}
+
+@keyframes animatepath {
+  from {
+    stroke-dashoffset: 500;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}

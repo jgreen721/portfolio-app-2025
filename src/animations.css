@@ -1,0 +1,47 @@
+.clear-blur {
+  filter: blur(100px);
+  animation: clearblur var(--duration) var(--delay) forwards;
+}
+
+@keyframes clearblur {
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.fade-out-blur {
+  animation: fade-out-blur var(--duration) var(--delay) forwards;
+}
+
+@keyframes fade-out-blur {
+  100% {
+    filter: blur(100px);
+  }
+}
+
+.translate-y-down {
+  animation: translate-y-down var(--duration) var(--delay) forwards;
+}
+
+@keyframes translate-y-down {
+  100% {
+    transform: translateY(15rem);
+  }
+}
+
+.translate-to-zero {
+  transform: translateY(15rem);
+  animation: translate-to-zero var(--duration) var(--delay) forwards;
+}
+
+@keyframes translate-to-zero {
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* @keyframes scale-to-one {
+  100% {
+    transform: scale(1);
+  }
+} */

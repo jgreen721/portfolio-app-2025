@@ -1,0 +1,20 @@
+.dev-info-container {
+  height: 100%;
+  background: var(--cardbg);
+  box-shadow: 5px 5px 15px var(--boxshadowinset) inset;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+.dev-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1050px) {
+  /* .dev-info-container {
+    flex-direction: row;
+  } */
+}

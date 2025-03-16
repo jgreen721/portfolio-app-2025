@@ -1,0 +1,180 @@
+.skills-section {
+  padding: 4rem 0;
+  width: 100%;
+  /* border: 5px solid blue; */
+}
+
+.skills {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  /* gap: 2rem; */
+}
+
+.skill-item {
+  height: 400px;
+  width: clamp(85%, 700px, 100%);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.skill-img-div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.skill-img {
+  height: 100%;
+  width: 100%;
+}
+
+.title-div {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background: var(--cardbg);
+  height: 75px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 1rem;
+}
+
+.title-div::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  box-shadow: -10px -10px 0px var(--cardbg);
+}
+
+.title-div::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 75px;
+  box-shadow: -10px -10px 0px var(--cardbg);
+}
+
+.taller-h3 {
+  font-size: 3.3rem;
+}
+
+.title-h3 {
+  margin-right: 1rem;
+}
+
+.skill-blurb-h5 {
+  font-weight: 500;
+}
+
+.blurb-div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--maincolor);
+  background: var(--mainbg);
+  width: 65%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-left: 10px solid var(--cardbg);
+  border-top: 10px solid var(--cardbg);
+  border-top-left-radius: 1rem;
+}
+
+.skill-img-div::after {
+  content: "";
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  /* background: green; */
+  bottom: 0;
+  right: 65%;
+  box-shadow: 10px 10px 0px var(--cardbg);
+}
+
+.blurb-div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--secondaryshadow);
+  filter: blur(15px);
+  opacity: 25%;
+}
+
+.blurb-div::before {
+  content: "";
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  bottom: 65px;
+  box-shadow: 10px 10px 0px var(--cardbg);
+}
+
+.patch-up {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.patch-up-bottom-right {
+  bottom: 0;
+  right: 0;
+  box-shadow: 10px 10px 0px var(--cardbg);
+}
+
+.patch-up-top-left {
+  left: 0;
+  top: 0;
+  box-shadow: -10px -10px 0px var(--cardbg);
+}
+
+.patch-up-bottom-left {
+  left: 0;
+  bottom: 0;
+  box-shadow: -10px 10px 0px var(--cardbg);
+}
+
+.patch-up-top-right {
+  right: 0;
+  top: 0;
+  box-shadow: 10px -10px 0px var(--cardbg);
+}
+
+@media screen and (max-width: 650px) {
+  /* .skills {
+    padding: 0;
+  } */
+
+  .taller-h3 {
+    font-size: 2rem;
+  }
+  .skill-item {
+    height: 300px;
+  }
+}

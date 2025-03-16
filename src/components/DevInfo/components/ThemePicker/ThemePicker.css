@@ -1,0 +1,81 @@
+.custom-theme-picker {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  transform: scale(0.65);
+  /* border: 2px solid green; */
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.star-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 17.5px;
+  height: 17.5px;
+  border-radius: 50%;
+  background: var(--maincolor);
+  overflow: hidden;
+}
+
+.moon-crest {
+  position: absolute;
+  height: 17.5px;
+  width: 17.5px;
+  background: var(--cardbg);
+  /* background: orange; */
+  border-radius: 50%;
+  transition: 0.5s ease;
+  transform-origin: right;
+  z-index: 5;
+  transform: scale(0) translateX(0.5rem);
+}
+
+.crest-moon {
+  transform: scale(1) translateX(0.5rem);
+}
+
+.line-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  transform: rotate(var(--rotate));
+}
+
+.line {
+  height: 10px;
+  width: 1px;
+  background: var(--maincolor);
+  position: absolute;
+  transform-origin: bottom;
+  transition: 0.25s linear;
+}
+
+.short-line {
+  transform: scaleY(0.75);
+}
+
+.hide-rays {
+  transform: scaleY(0);
+}
+
+/* @media screen and (max-width: 650px) {
+  .custom-theme-picker {
+    transform: scale(0.45);
+  }
+} */
