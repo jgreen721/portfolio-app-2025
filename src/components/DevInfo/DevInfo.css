@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 1050px) {
-  /* .dev-info-container {
-    flex-direction: row;
-  } */
+  .dev-info-container {
+    padding: 2rem;
+  }
 }

@@ -75,12 +75,9 @@
     gap: 2rem;
   }
 
-  .app-content-column {
-    padding: 2rem;
-  }
-
   .small-app-content-column {
     height: fit-content;
+    padding-bottom: 0rem;
   }
 
   .large-app-content-column {

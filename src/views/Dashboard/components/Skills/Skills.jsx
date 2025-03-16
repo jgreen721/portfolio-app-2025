@@ -23,7 +23,7 @@ const Skills = () => {
             {skill.name.split(" ").map((word,idx)=>(
               <h3 className="title-h3" key={idx}>
               <span className="taller-h3">{word[0]}</span>
-              <span className="mid-thin">{word.slice(1,word.length)}</span>
+              <span className="mid-thin">{word.slice(1,word.length).length < 10 || innerWidth > 650 ? word.slice(1,word.length) : word.slice(1,3)}</span>
               </h3>
             ))}
             
