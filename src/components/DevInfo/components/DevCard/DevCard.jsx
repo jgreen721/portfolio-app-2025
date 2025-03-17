@@ -22,7 +22,7 @@ const DevCard = ({handleAppTheme,appTheme}) => {
         <div className="h5-role-div">
           <h5 className="h5-role no-whitespace">Web Developer</h5>
         </div>
-        <div className="themepicker-div desktop">
+        <div className="themepicker-div">
           <ThemePicker appTheme={appTheme} handleAppTheme={handleAppTheme}/>
         </div>
       </div>

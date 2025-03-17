@@ -23,20 +23,21 @@
   background: transparent;
   color: var(--maincolor);
   font-size: 1.65rem;
-  box-shadow: 1px 1px 5px var(--secondaryshadow) inset;
+  box-shadow: 1px 1px 5px var(--secondaryshadow) inset,
+    5px 3px 10px var(--cardbg) inset;
   cursor: pointer;
+  border: none;
 }
 
 .mobile-contacts-menu-parent {
   width: 100%;
-  padding-top: 2rem;
-  margin-top: 3rem;
   overflow: hidden;
   height: 245px;
-  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .mobile-contacts-menu {
+  margin-top: 3rem;
   border-top: 2px solid var(--maincolor);
   padding-top: 2rem;
   display: flex;
@@ -44,12 +45,22 @@
   gap: 2.5rem;
 }
 
-.hide-mobile-dev-menu {
-  height: 0px;
-}
-
 @media screen and (max-width: 1050px) {
   .dev-info-container {
     padding: 2rem;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .dev-info-menu-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.35rem;
+  }
+  .mobile-contacts-menu-parent {
+    height: 390px;
+  }
+}
+
+.hide-mobile-dev-menu {
+  height: 0px;
 }
