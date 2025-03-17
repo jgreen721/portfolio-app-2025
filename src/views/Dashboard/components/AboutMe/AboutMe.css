@@ -12,6 +12,8 @@
   width: 100px;
   border-radius: 2rem;
   overflow: hidden;
+  position: absolute;
+  left: 285px;
 }
 
 .about-me-img {
@@ -32,4 +34,12 @@
 
 .about-me-blurb {
   line-height: 2.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .about-me-img-div {
+    left: 145px;
+    height: 75px;
+    width: 75px;
+  }
 }
