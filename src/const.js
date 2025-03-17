@@ -2,6 +2,7 @@ export const customAvatar = "./assets/nobg-customavatar.png";
 export const darkModeCustomAvatar = "./assets/darkmodeavatar.png";
 export const lightAvatarBg = "./assets/avatarlightbg.jpg";
 export const darkAvatarBg = "./assets/avatardarkbg.jpg";
+export const sailingImg = "./assets/sailingcss-sample.png";
 
 export const webDesignImg = "./skills_assets/webdesign.jpg";
 export const webDevImg = "./skills_assets/webdev.jpg";

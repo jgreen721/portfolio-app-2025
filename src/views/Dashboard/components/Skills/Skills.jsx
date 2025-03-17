@@ -12,7 +12,7 @@ const Skills = () => {
     {id:3,name:"Mobile Apps",blurb:"Modern solutions for your brand with iOS and Android-compatible apps.",img:mobileImg},
   ]
   return (
-    <div className="skills-section">
+    <div className="skills-section content-section">
       <ul className="skills">
       {skills.map(skill=>(
         <li key={skill.id} className="skill-item">

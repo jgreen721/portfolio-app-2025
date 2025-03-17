@@ -1,7 +1,22 @@
 .about-me-header {
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   margin-bottom: 2rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-me-img-div {
+  height: 100px;
+  width: 100px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.about-me-img {
+  height: 100%;
+  width: 100%;
 }
 
 .about-me-header::after {

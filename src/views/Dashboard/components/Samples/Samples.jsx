@@ -11,7 +11,10 @@ const Samples = () => {
     {id:3,title:"Finance Tracker",image1:sampleImg3a,image2:sampleImg3b,link:"https://personal-finance-firebase.vercel.app/",code:"https://github.com/jgreen721/personal-finance-firebase"},
   ]
   return (
-    <div className="samples-section">
+    <div className="samples-section content-section">
+      <header className="samples-header section-header">
+        <h1>Samples <span className="text-secondary"></span></h1>
+      </header>
       <ul className="samples">
       {samples.map(sampleItem=>(
         <li key={sampleItem.id} className="sample-item">
