@@ -6,10 +6,6 @@
   /* border: 2px solid red; */
 }
 
-.hidden-avatar-div {
-  padding: 2rem;
-}
-
 .media-links {
   display: flex;
   justify-content: center;
@@ -26,14 +22,26 @@
   font-size: 3rem;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1050px) {
   .media-links {
-    gap: 1rem;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
   }
+
   .media-link {
     font-size: 2rem;
   }
 }
+
+/* @media screen and (max-width: 650px) {
+  .media-links {
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border: 2px solid green;
+  }
+  .media-link {
+    font-size: 2rem;
+  }
+} */

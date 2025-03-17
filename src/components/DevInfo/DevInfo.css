@@ -4,13 +4,48 @@
   box-shadow: 5px 5px 15px var(--boxshadowinset) inset;
   border-radius: 2rem;
   padding: 4rem;
-}
-
-.dev-info-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dev-info-menu-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* width: 150px; */
+  padding: 1rem 2.25rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  background: transparent;
+  color: var(--maincolor);
+  font-size: 1.65rem;
+  box-shadow: 1px 1px 5px var(--secondaryshadow) inset;
+  cursor: pointer;
+}
+
+.mobile-contacts-menu-parent {
+  width: 100%;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  overflow: hidden;
+  height: 245px;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile-contacts-menu {
+  border-top: 2px solid var(--maincolor);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.hide-mobile-dev-menu {
+  height: 0px;
 }
 
 @media screen and (max-width: 1050px) {
