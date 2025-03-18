@@ -67,6 +67,10 @@ p {
   font-size: 1.5rem;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 1050px) {
   :root {
     --mainPaddingX: 2rem;

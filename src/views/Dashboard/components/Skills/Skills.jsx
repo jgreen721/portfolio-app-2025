@@ -35,6 +35,7 @@ const Skills = () => {
             <div className="patch-up patch-up-bottom-left"></div>
             <div className="patch-up patch-up-top-right"></div>
             <div className="patch-up patch-up-bottom-right"></div>
+            <div className="blurb-overlay"></div>
           </div>
         </li>
       ))}

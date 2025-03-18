@@ -80,6 +80,8 @@
 
 .skill-blurb-h5 {
   font-weight: 500;
+  z-index: 5;
+  text-shadow: 0px 0px 2px var(--mainbg);
 }
 
 .blurb-div {
@@ -87,7 +89,7 @@
   bottom: 0;
   right: 0;
   color: var(--maincolor);
-  background: var(--mainbg);
+  /* background: var(--mainbg); */
   width: 65%;
   height: 65px;
   display: flex;
@@ -97,6 +99,21 @@
   border-left: 10px solid var(--cardbg);
   border-top: 10px solid var(--cardbg);
   border-top-left-radius: 1rem;
+}
+
+.blurb-div::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  backdrop-filter: blur(3px);
+}
+
+.blurb-overlay {
+  inset: 0;
+  position: absolute;
+  background: var(--mainbg);
+  opacity: 25%;
+  filter: blur(10px);
 }
 
 .skill-img-div::after {
@@ -112,14 +129,14 @@
   box-shadow: 10px 10px 0px var(--cardbg);
 }
 
-.blurb-div::after {
+/* .blurb-div::after {
   content: "";
   position: absolute;
   inset: 0;
   background: var(--secondaryshadow);
   filter: blur(15px);
   opacity: 25%;
-}
+} */
 
 .blurb-div::before {
   content: "";
@@ -139,6 +156,7 @@
   height: 20px;
   background: transparent;
   border-radius: 50%;
+  z-index: 5;
 }
 
 .patch-up-bottom-right {

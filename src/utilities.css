@@ -35,6 +35,12 @@
   display: flex;
 }
 
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;

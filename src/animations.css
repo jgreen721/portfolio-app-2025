@@ -29,6 +29,27 @@
   }
 }
 
+.translate-x-right {
+  animation: translate-x-right var(--duration) var(--delay) forwards;
+}
+
+@keyframes translate-x-right {
+  100% {
+    transform: translate(15rem);
+  }
+}
+
+.restore-x-right {
+  transform: translateX(15rem);
+  animation: restore-x-right var(--duration) var(--delay) forwards;
+}
+
+@keyframes restore-x-right {
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
 .translate-to-zero {
   transform: translateY(15rem);
   animation: translate-to-zero var(--duration) var(--delay) forwards;
@@ -36,7 +57,7 @@
 
 @keyframes translate-to-zero {
   100% {
-    transform: translate(0);
+    transform: translateX(0);
   }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map } from './components'
+import { Map,Form } from './components'
 import "./Contact.css"
 
 const Contact = () => {
@@ -9,8 +9,8 @@ const Contact = () => {
         <h1>Contact <span className="text-secondary">Me</span></h1>
       </header>
         <Map/>
-     
-    </div>
+        <Form/>     
+     </div>
   )
 }
 

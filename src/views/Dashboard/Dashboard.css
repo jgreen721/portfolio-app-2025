@@ -7,11 +7,11 @@
 }
 
 .content-section {
-  padding: 10rem 0;
+  padding: 7.5rem 0;
 }
 
 .section-header {
-  padding: 2rem var(--mainPaddingX);
+  padding: 2rem 0rem;
 }
 
 @media screen and (max-width: 1050px) {
@@ -23,5 +23,9 @@
 @media screen and (max-width: 650px) {
   .section-header {
     padding: 2rem 0rem;
+  }
+
+  .content-section {
+    padding: 5rem 0;
   }
 }

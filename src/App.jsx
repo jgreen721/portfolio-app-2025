@@ -1,8 +1,7 @@
 import {useState,useEffect} from "react"
 import './App.css'
 import {DevInfo} from "./components"
-import {Dashboard,Resume,Portfolio,Contact} from "./views"
-import {Routes,Route} from "react-router-dom"
+import {Dashboard} from "./views"
 
 
 function App() {
@@ -37,12 +36,13 @@ function App() {
             <DevInfo handleAppTheme={handleAppTheme} appTheme={appTheme}/>
           </div>
           <div className="app-content-column large-app-content-column">
-            <Routes>
+            <Dashboard/>
+            {/* <Routes>
               <Route path="/" element={<Dashboard/>}/>
               <Route path="/resume" element={<Resume/>}/>
               <Route path="/portfolio" element={<Portfolio/>}/>
               <Route path="/contact" element={<Contact/>}/>
-            </Routes>
+            </Routes> */}
           </div>
         </div>
       </div>
