@@ -1,7 +1,7 @@
 .contact-form-section {
   margin-top: 3.5rem;
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .contact-form {
@@ -23,6 +23,10 @@
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
+  background: var(--mainbg);
+  color: var(--maincolor);
+  outline: none;
+  border: none;
 }
 
 .form-text {
@@ -31,6 +35,10 @@
   resize: none;
   padding: 1rem;
   font-family: var(--mainFont);
+  background: var(--mainbg);
+  color: var(--maincolor);
+  outline: none;
+  border: none;
 }
 
 .form-error-div {
@@ -49,10 +57,36 @@
 }
 
 .form-btn {
-  padding: 1.25rem 4rem;
+  padding: 1.5rem 4rem;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.25;
   cursor: pointer;
+  background: transparent;
+  border: none;
+  background: var(--mainbg);
+  color: var(--maincolor);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  text-shadow: 0px 0px 2px var(--mainbg);
+}
+
+.btn-overlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.btn-overlay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 65%;
+  filter: blur(15px);
+  height: 4px;
+  background: var(--secondarycolor);
 }
