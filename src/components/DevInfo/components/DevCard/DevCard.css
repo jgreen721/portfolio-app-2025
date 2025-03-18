@@ -97,9 +97,20 @@
 }
 
 @media screen and (max-width: 650px) {
+  .avatar-img-div {
+    height: 75px;
+    width: 75px;
+  }
   .role-theme-div {
     flex-direction: column;
     /* position: relative; */
+  }
+
+  .themepicker-div {
+    position: absolute;
+    top: 0rem;
+    left: 10.5rem;
+    transform: scale(0.75);
   }
 
   /* .h5-role-div {
