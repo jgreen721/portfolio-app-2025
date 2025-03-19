@@ -1,6 +1,7 @@
 .contact-form-section {
   margin-top: 3.5rem;
   width: 100%;
+  position: relative;
   /* border: 2px solid red; */
 }
 
@@ -89,4 +90,49 @@
   filter: blur(15px);
   height: 4px;
   background: var(--secondarycolor);
+}
+
+.contact-progress {
+  /* position: absolute; */
+  /* border: 2px solid var(--mainbg); */
+  /* border: 2px solid orange; */
+  width: clamp(45%, 350px, 100%);
+  /* left: 245px;
+  top: 2rem; */
+  height: 10px;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.celebrate-progress {
+  animation: celebrateprogress 1.5s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+}
+
+@keyframes celebrateprogress {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.2);
+  }
+  75% {
+    transform: scaleX(0);
+  }
+  100% {
+    width: 0px;
+    transform: scaleX(1);
+  }
+}
+
+.email-progress {
+  position: absolute;
+  background: var(--secondarycolor);
+  width: 0%;
+  overflow: hidden;
+  height: 100%;
+  left: 0;
+  filter: blur(2px);
+  color: black;
 }

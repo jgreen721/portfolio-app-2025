@@ -1,14 +1,15 @@
-import React, {useRef, useState} from 'react'
+import React, {useRef, useState,useEffect} from 'react'
 import emailjs from '@emailjs/browser';
 import { BsSend } from "react-icons/bs";
 
 import "./Form.css"
 
 
-console.log(import.meta.env)
+// console.log(import.meta.env)
 
 const Form = () => {
     const formRef = useRef();
+    const progressRef = useRef();
     const [clientError,setClientError] = useState(false);
     const [emailError,setEmailError] = useState(false);
     const [messageError,setMessageError] = useState(false);
@@ -47,14 +48,12 @@ const Form = () => {
             },2750);
             return
         }
-
-
-        handleEmail();
+handleEmail();
         // console.log("ENV_VARIABLES",import.meta.env)
 
     }
 
-    const handleEmail=(formData)=>{
+    const handleEmail=()=>{
         emailjs
         .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, formRef.current, {
           publicKey: import.meta.env.VITE_API_KEY,
@@ -62,9 +61,10 @@ const Form = () => {
         .then(
           () => {
             console.log('SUCCESS!');
-            formRef.current["client"].value=""
-            formRef.current["email"].value=""
+            formRef.current["user_name"].value=""
+            formRef.current["user_email"].value=""
             formRef.current["message"].value=""
+            growProgress();
           },
           (error) => {
             console.log('FAILED...', error);
@@ -72,12 +72,48 @@ const Form = () => {
         );
 
     }
+
+
+    const growProgress=()=>{
+        progressRef.current.style.width = `0px`
+        progressRef.current.classList.remove("celebrate-progress")
+
+       let progressInt;
+       let width = 0;
+
+       progressInt = setInterval(()=>{
+           width++;
+           console.log(`Width:${width}%`);
+       progressRef.current.style.width = `${width}%`
+
+           if(width >= 100){
+               clearInterval(progressInt)
+               setTimeout(()=>{
+                //    width = 0;
+                //    progressRef.current.style.width = `${width}%`
+                progressRef.current.classList.add("celebrate-progress")
+
+               },1250);
+            }
+       },10)
+    }
+
+
+
   return (
     <div className="contact-form-section">
-        <h2>Contact Form</h2>
-        <div className="h5-border-sign">
-            <h5 className="mid-thin">Lets bring <em>your</em> vision to life!</h5>
-        </div>
+        <header>
+            <h2>Contact Form</h2>
+            <div className="h5-border-sign">
+                <h5 className="mid-thin">Lets bring <em>your</em> vision to life!</h5>
+            </div>
+            <div className="contact-progress">
+                <div ref={progressRef} className="email-progress">
+                <h4>Successfully Sent</h4>
+
+                </div>
+            </div>
+        </header>
         <form onSubmit={handleFormSubmit} className="contact-form" ref={formRef}>
             <div className="form-row">
                 <div className="form-div">
